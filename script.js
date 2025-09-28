@@ -36,16 +36,16 @@ document.addEventListener('DOMContentLoaded', () => {
                         const card = document.createElement('div');
                         card.className = 'col-md-4 mb-4';
                         card.innerHTML = `
-                            <div class="card">
-                                <img src="cakes/${cake}.jpg" class="card-img-top" alt="${cake}">
-                                <div class="card-body">
-                                    <h5 class="card-title">${cake.replace('-', ' ').toUpperCase()}</h5>
-                                    <p class="card-text">${description}</p>
-                                    <p class="card-text"><strong>${price}</strong></p>
-                                    <a href="https://wa.me/${whatsappNumber}?text=I%20want%20to%20order%20the%20${cake.replace('-', '%20')}%20cake" class="btn btn-primary">Order Now</a>
-                                </div>
-                            </div>
-                        `;
+                                        <div class="card animate__animated animate__fadeInUp">
+                                            <img src="cakes/${cake}.jpg" class="card-img-top" alt="${cake}">
+                                            <div class="card-body">
+                                                <h5 class="card-title">${cake.replace('-', ' ').toUpperCase()}</h5>
+                                                <p class="card-text">${description}</p>
+                                                <p class="card-text"><strong>${price}</strong></p>
+                                                <a href="https://wa.me/${whatsappNumber}?text=I%20want%20to%20order%20the%20${cake.replace('-', '%20')}%20cake" class="btn btn-primary">Order Now</a>
+                                            </div>
+                                        </div>
+                                    `;
                         cakeGrid.appendChild(card);
                     })
                     .catch(error => console.error(`Error loading data for ${cake}:`, error));
