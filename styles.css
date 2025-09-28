@@ -1,19 +1,48 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
+    background-color: #fff5f5; /* Soft pink background */
+    color: #333;
 }
 
-header {
-    background-color: #007bff;
+.hero {
+    background-color: #ff69b4; /* Hot pink for hero */
+    padding: 60px 0;
+}
+
+.owner-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+    font-family: 'Georgia', serif; /* Elegant font for headings */
+    color: #8b4513; /* Chocolate brown */
+}
+
+.btn-primary {
+    background-color: #ff69b4; /* Pink button */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #ff1493; /* Darker pink on hover */
 }
 
 .card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card-img-top {
@@ -21,7 +50,28 @@ header {
     object-fit: cover;
 }
 
-.btn-primary {
-    background-color: #28a745;
-    border: none;
+.card-title {
+    color: #8b4513; /* Brown for titles */
 }
+
+.bg-light {
+    background-color: #f8f9fa !important; /* Light section background */
+}
+
+/* Custom animations if Animate.css isn't enough */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate__fadeInUp {
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Apply fade-in to cards in JS if needed, but Animate.css handles most */
