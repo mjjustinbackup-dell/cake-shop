@@ -3,41 +3,283 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SugarBliss - Homemade Cakes for Every Occasion</title>
+    <title>SugarBliss - Premium Artisan Cakes</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="hero bg-primary text-white text-center py-5 animate__animated animate__fadeIn">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <img src="images/owner.jpg" alt="Owner holding a cake" class="owner-photo mb-4 animate__animated animate__zoomIn">
-            <h1>Welcome to SugarBliss</h1>
-            <p class="lead">Handcrafted, homemade cakes made with pure, natural ingredients—no artificial additives. Perfect for birthdays, weddings, and special occasions!</p>
-            <a href="buy.html" class="btn btn-light btn-lg animate__animated animate__bounce">Buy Now</a>
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-birthday-cake me-2"></i>
+                <span class="brand-text">SugarBliss</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="buy.html">Order Now</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <section class="container my-5 animate__animated animate__slideInLeft">
-        <h2>Our History</h2>
-        <p>SugarBliss has been a cherished part of our community since 1990, when it started as a small home bakery in a cozy kitchen. Founded by passionate bakers who believed in the magic of simple, wholesome ingredients, we've grown while staying true to our roots. Over the decades, we've delighted generations with cakes that taste like home—baked fresh for birthdays, anniversaries, and celebrations big and small.</p>
-        <p>Every cake is made from scratch using only the finest natural ingredients: real butter, fresh eggs, organic flour, and pure vanilla. No preservatives, no artificial colors or flavors—just pure bliss in every bite. Our story is one of tradition, love, and commitment to quality, passed down through years of perfecting recipes that bring joy to your table.</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <div class="floating-elements">
+                <div class="floating-cake cake-1"><i class="fas fa-birthday-cake"></i></div>
+                <div class="floating-cake cake-2"><i class="fas fa-cookie-bite"></i></div>
+                <div class="floating-cake cake-3"><i class="fas fa-ice-cream"></i></div>
+                <div class="floating-cake cake-4"><i class="fas fa-candy-cane"></i></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="hero-title animate__animated animate__fadeInUp">
+                            <span class="gradient-text">Premium</span><br>
+                            Artisan Cakes
+                        </h1>
+                        <p class="hero-subtitle animate__animated animate__fadeInUp animate__delay-1s">
+                            Handcrafted with love, made with the finest natural ingredients. 
+                            Every bite is a celebration of taste and tradition.
+                        </p>
+                        <div class="hero-buttons animate__animated animate__fadeInUp animate__delay-2s">
+                            <a href="buy.html" class="btn btn-primary btn-lg me-3">
+                                <i class="fas fa-shopping-cart me-2"></i>
+                                Order Now
+                            </a>
+                            <a href="#about" class="btn btn-outline-light btn-lg">
+                                <i class="fas fa-play me-2"></i>
+                                Learn More
+                            </a>
+                        </div>
+                        <div class="hero-stats animate__animated animate__fadeInUp animate__delay-3s">
+                            <div class="stat-item">
+                                <h3>30+</h3>
+                                <p>Years Experience</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>1000+</h3>
+                                <p>Happy Customers</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>50+</h3>
+                                <p>Cake Varieties</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image-container animate__animated animate__zoomIn animate__delay-1s">
+                        <div class="image-frame">
+                            <img src="images/owner.jpg" alt="Owner holding a cake" class="owner-photo">
+                            <div class="image-overlay">
+                                <div class="floating-badge">
+                                    <i class="fas fa-star"></i>
+                                    <span>Premium Quality</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="container my-5 bg-light py-4 animate__animated animate__slideInRight">
-        <h2>Why Choose SugarBliss?</h2>
-        <ul>
-            <li>Homemade with love for every occasion.</li>
-            <li>Pure, natural ingredients for authentic flavor.</li>
-            <li>A legacy of excellence spanning over 30 years.</li>
-            <li>Custom cakes tailored to your celebrations.</li>
-        </ul>
+    <!-- About Section -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h2 class="section-title">
+                            <span class="title-accent">Our</span> Story
+                        </h2>
+                        <p class="lead">Since 1990, SugarBliss has been crafting exceptional cakes that bring joy to every celebration.</p>
+                        <p>What started as a small home bakery in a cozy kitchen has grown into a beloved community institution. Founded by passionate bakers who believed in the magic of simple, wholesome ingredients, we've maintained our commitment to quality while expanding our reach.</p>
+                        <p>Every cake is made from scratch using only the finest natural ingredients: real butter, fresh eggs, organic flour, and pure vanilla. No preservatives, no artificial colors or flavors—just pure bliss in every bite.</p>
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <i class="fas fa-heart"></i>
+                                <span>Made with Love</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-leaf"></i>
+                                <span>Natural Ingredients</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-award"></i>
+                                <span>Premium Quality</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-image">
+                        <div class="image-card">
+                            <div class="card-content">
+                                <i class="fas fa-quote-left"></i>
+                                <p>"Every cake tells a story of tradition, love, and commitment to excellence."</p>
+                                <div class="author">
+                                    <strong>Founder, SugarBliss</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 SugarBliss. All rights reserved.</p>
+    <!-- Features Section -->
+    <section id="features" class="features-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">
+                    Why Choose <span class="title-accent">SugarBliss</span>?
+                </h2>
+                <p class="section-subtitle">Experience the difference that passion and quality make</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h4>Homemade Excellence</h4>
+                        <p>Every cake is crafted in our kitchen with the same care and attention as if it were for our own family.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h4>Pure Ingredients</h4>
+                        <p>We use only the finest natural ingredients - no artificial additives, preservatives, or shortcuts.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>30+ Years Legacy</h4>
+                        <p>Three decades of perfecting recipes and building relationships with our community.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h4>Custom Designs</h4>
+                        <p>Tailored cakes for every celebration - birthdays, weddings, anniversaries, and special occasions.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h4>Fresh Delivery</h4>
+                        <p>Baked fresh to order and delivered with care to ensure the perfect taste and texture.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-smile"></i>
+                        </div>
+                        <h4>Customer Satisfaction</h4>
+                        <p>Your happiness is our priority. We're committed to exceeding your expectations every time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5">
+        <div class="container">
+            <div class="cta-content text-center">
+                <h2 class="cta-title">Ready to Taste the Difference?</h2>
+                <p class="cta-subtitle">Order your perfect cake today and experience the magic of SugarBliss</p>
+                <div class="cta-buttons">
+                    <a href="buy.html" class="btn btn-primary btn-lg me-3">
+                        <i class="fas fa-shopping-cart me-2"></i>
+                        Browse Cakes
+                    </a>
+                    <a href="https://wa.me/31685655527" class="btn btn-success btn-lg">
+                        <i class="fab fa-whatsapp me-2"></i>
+                        WhatsApp Order
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand">
+                        <i class="fas fa-birthday-cake me-2"></i>
+                        <span class="brand-text">SugarBliss</span>
+                    </div>
+                    <p class="footer-description">
+                        Crafting exceptional cakes with love and tradition since 1990. 
+                        Your celebrations deserve the very best.
+                    </p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="buy.html">Order Now</a></li>
+                        <li><a href="https://wa.me/31685655527">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5>Contact Info</h5>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone me-2"></i> +31 685 655 527</p>
+                        <p><i class="fab fa-whatsapp me-2"></i> WhatsApp Orders</p>
+                        <p><i class="fas fa-envelope me-2"></i> info@sugarbliss.nl</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <p>&copy; 2025 SugarBliss. All rights reserved. Made with <i class="fas fa-heart text-danger"></i> for cake lovers.</p>
+            </div>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
