@@ -84,10 +84,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .gradient-text {
-    background: var(--primary-gradient);
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 .title-accent {
@@ -258,6 +259,38 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+/* ===== SCROLL INDICATOR ===== */
+.scroll-indicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    font-weight: 500;
+    animation: bounce 2s infinite;
+}
+
+.scroll-indicator i {
+    font-size: 1.5rem;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    40% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+    60% {
+        transform: translateX(-50%) translateY(-5px);
+    }
+}
+
 /* ===== HERO IMAGE ===== */
 .hero-image-container {
     position: relative;
@@ -397,6 +430,12 @@ h1, h2, h3, h4, h5, h6 {
 .features-section {
     background: var(--light-color);
     position: relative;
+}
+
+.cakes-section {
+    background: var(--white);
+    position: relative;
+    border-top: 1px solid rgba(0,0,0,0.1);
 }
 
 .cta-section {
