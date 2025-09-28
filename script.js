@@ -39,7 +39,7 @@ function loadCakes() {
     const repoOwner = 'mjjustinbackup-dell';
     const repoName = 'cake-shop';
     const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/cakes`;
-    const whatsappNumber = '+31685655527';
+    const whatsappNumber = '+31684125538';
 
     // Show loading state
     if (loadingState) loadingState.style.display = 'flex';
