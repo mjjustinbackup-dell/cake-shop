@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     const cakeGrid = document.getElementById('cake-grid');
-    const repoOwner = 'yourusername'; // Replace with your GitHub username
+    const repoOwner = 'mjjustinbackup-dell'; // Replace with your GitHub username
     const repoName = 'cake-shop'; // Replace with your repository name
     const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/cakes`;
 
-    const whatsappNumber = '1234567890'; // Replace with your WhatsApp number (e.g., '15551234567')
+    const whatsappNumber = '+31685655527'; // Replace with your WhatsApp number (e.g., '15551234567')
 
     fetch(apiUrl)
         .then(response => {
