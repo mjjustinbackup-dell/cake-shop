@@ -53,7 +53,7 @@
             </div>
         </div>
         <div class="container">
-            <div class="row align-items-center min-vh-100">
+            <div class="row align-items-center" style="min-height: 50vh;">
                 <div class="col-lg-8 mx-auto text-center">
                     <div class="hero-content">
                         <h1 class="hero-title animate__animated animate__fadeInUp">
@@ -73,6 +73,10 @@
                                 <i class="fas fa-arrow-left me-2"></i>
                                 Back to Home
                             </a>
+                        </div>
+                        <div class="scroll-indicator animate__animated animate__bounce animate__delay-3s">
+                            <i class="fas fa-chevron-down"></i>
+                            <span>Browse our cakes below</span>
                         </div>
                     </div>
                 </div>
@@ -102,6 +106,14 @@
     <!-- Cakes Grid -->
     <section class="cakes-section py-5">
         <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">
+                        <span class="title-accent">Delicious</span> Cakes
+                    </h2>
+                    <p class="section-subtitle">Choose from our premium collection of handcrafted cakes</p>
+                </div>
+            </div>
             <div class="row" id="cake-grid">
                 <!-- Cakes will be dynamically loaded here -->
             </div>
