@@ -182,7 +182,7 @@ function showErrorState() {
                     <i class="fas fa-exclamation-triangle fa-2x mb-3"></i>
                     <h4>Unable to load cakes</h4>
                     <p>We're having trouble loading our cake collection. Please try again later or contact us directly.</p>
-                    <a href="https://wa.me/31685655527" class="btn btn-success">
+                    <a href="https://wa.me/31684125538" class="btn btn-success">
                         <i class="fab fa-whatsapp me-2"></i>
                         Contact Us
                     </a>
