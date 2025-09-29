@@ -1,2 +1,2 @@
 Description: This is a delicious chocolate cake with rich frosting.
-Price: $25
+Price: 25€
