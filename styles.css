@@ -252,6 +252,12 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: var(--shadow-md);
 }
 
+.christmas-banner.contrast {
+    background: var(--primary-color);
+    color: #ffffff;
+    border: none;
+}
+
 .christmas-banner .badge {
     background: var(--secondary-gradient);
     color: var(--primary-color);
@@ -265,6 +271,23 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     gap: 0.75rem;
     flex-wrap: wrap;
+}
+
+/* Christmas star */
+.christmas-star {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 1.6rem;
+    color: #fff8dc;
+    text-shadow: 0 0 8px rgba(255,255,255,0.9), 0 0 14px rgba(255,215,0,0.6);
+    animation: twinkle 2.2s ease-in-out infinite;
+    z-index: 3;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.6; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.2); }
 }
 
 /* ===== PAGE HEADER ===== */
